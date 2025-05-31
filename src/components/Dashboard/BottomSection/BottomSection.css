@@ -18,14 +18,179 @@
     margin-bottom: 15px;
 }
 
-.list-placeholder, .alert-placeholder {
-    padding: 20px;
-    background-color: #eee;
-    border-radius: 4px;
-    color: #555;
+/* Ongoing Rides Specific Styles */
+.ongoing-rides .rides-list {
     margin-bottom: 15px;
 }
 
+.ongoing-rides .ride-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ongoing-rides .ride-item:last-child {
+    border-bottom: none;
+}
+
+.ongoing-rides .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.ongoing-rides .ride-details {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.ongoing-rides .rider-name {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    font-size: 1em;
+}
+
+.ongoing-rides .route {
+    margin: 2px 0 0 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.ongoing-rides .status-tag {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.ongoing-rides .status-tag.active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.ongoing-rides .status-tag.en-route {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.ongoing-rides .status-tag.waiting {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+
+/* Emergency Alerts Specific Styles */
+.emergency-alerts-card {
+    border: 1px solid #dc3545;
+    background-color: #fff;
+}
+
+.emergency-alerts-card h3 {
+    color: #555;
+}
+
+.emergency-alerts-card .alert-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
+
+.emergency-alerts-card .alert-icon {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #dc3545;
+}
+
+.emergency-alerts-card .alert-details {
+    flex-grow: 1;
+}
+
+.emergency-alerts-card .alert-type {
+    margin: 0;
+    font-weight: bold;
+    color: #721c24;
+}
+
+.emergency-alerts-card .alert-info {
+    margin: 2px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.emergency-alerts-card .take-action-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.emergency-alerts-card .take-action-button:hover {
+    background-color: #c82333;
+}
+
+.emergency-alerts-card .no-alerts {
+    text-align: center;
+    color: #777;
+    margin-top: 0;
+    font-size: 0.9em;
+}
+
+/* Quick Actions Specific Styles */
+.quick-actions-card .quick-actions-list {
+    margin-bottom: 15px;
+}
+
+.quick-actions-card .quick-action-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.quick-actions-card .quick-action-item:last-child {
+    border-bottom: none;
+}
+
+.quick-actions-card .quick-action-item p {
+    margin: 0;
+    color: #333;
+}
+
+.quick-actions-card .quick-action-count {
+    background-color: #ffc107;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+.quick-actions-card .quick-action-amount {
+     background-color: #007bff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+/* General Button Styles (retained from previous Dashboard.css, adjusted) */
 .view-all-button, .send-notifications-button {
     display: block;
     width: 100%;
@@ -49,46 +214,9 @@
 .send-notifications-button {
     background-color: #6c757d;
     color: white;
-    margin-top: 15px; /* Add space above the button */
+    margin-top: 15px;
 }
 
 .send-notifications-button:hover {
     background-color: #5a6268;
-}
-
-.quick-action-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.quick-action-item:last-child {
-    border-bottom: none;
-}
-
-.quick-action-item p {
-    margin: 0;
-    color: #333;
-}
-
-.quick-action-item span {
-    background-color: #ffc107;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 12px;
-    color: #333;
-}
-
-.alert-placeholder {
-    background-color: #fff3cd;
-    color: #856404;
-    border: 1px solid #ffeeba;
-}
-
-.no-alerts {
-    text-align: center;
-    color: #777;
-    margin-top: 20px;
 } 
