@@ -1,0 +1,22 @@
+/* Basic styles for User Management Page */ 
+.user-management-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.user-management-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.user-management-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-management-body {
+    display: flex;
+    gap: 20px; /* Space between list and detail sections */
+} 

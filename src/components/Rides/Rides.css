@@ -1,0 +1,20 @@
+/* Styles for Rides page */
+.rides-page {
+  display: flex;
+}
+
+.rides-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.rides-content h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.rides-content p {
+  margin-top: 0;
+  color: #777;
+} 

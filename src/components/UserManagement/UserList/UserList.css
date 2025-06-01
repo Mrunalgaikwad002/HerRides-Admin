@@ -1,0 +1,115 @@
+/* Styles for UserList component */ 
+.user-list-container {
+    flex-basis: 40%; /* Adjust width as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide overflowing content */
+    height: fit-content; /* Adjust height to fit content */
+}
+
+.user-list-container .list-header {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 0.5fr; /* Adjust column widths */
+    padding: 12px 20px; /* Adjusted padding */
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9em; /* Adjusted font size */
+}
+
+.user-list-container .header-item {
+    padding: 0 5px; /* Add some padding */
+}
+
+.user-list-container .user-list-item {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 0.5fr; /* Match header columns */
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding */
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.user-list-container .user-list-item:last-child {
+    border-bottom: none;
+}
+
+.user-list-container .user-list-item:hover {
+    background-color: #f9f9f9;
+}
+
+.user-list-container .user-list-item.selected {
+    background-color: #e0f2ff; /* Light blue background for selected item */
+}
+
+.user-list-container .user-info {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.user-list-container .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.user-list-container .user-details {
+    flex-grow: 1;
+    display: flex; /* Use flexbox for vertical centering of text */
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+}
+
+.user-list-container .user-name {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    font-size: 1em; /* Ensured standard font size */
+}
+
+.user-list-container .user-id {
+    margin: 2px 0 0 0;
+    font-size: 0.85em;
+    color: #777;
+}
+
+.user-list-container .user-status {
+    padding: 0 5px;
+}
+
+.user-list-container .status-tag {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.75em;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+    display: inline-block; /* Ensure padding and border work correctly */
+    vertical-align: middle; /* Attempt to vertically align tag */
+}
+
+.user-list-container .status-tag.verified {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.user-list-container .status-tag.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.user-list-container .user-actions {
+     padding: 0 5px;
+     text-align: center; /* Center the ellipsis */
+}
+
+.user-list-container .action-ellipsis {
+    font-size: 1.2em;
+    color: #555;
+    cursor: pointer;
+}

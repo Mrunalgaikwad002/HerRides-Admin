@@ -1,0 +1,38 @@
+/* Styles for Rides Tabs */
+.rides-tabs {
+  display: flex;
+  /* gap: 15px; Adjust spacing between tabs */
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd; /* Add bottom border to the container */
+  padding-bottom: 0; /* Remove bottom padding */
+}
+
+.rides-tabs div {
+  padding: 10px 15px; /* Adjusted padding */
+  border-radius: 4px 4px 0 0; /* Less rounded top corners */
+  /* border: 1px solid #ddd; Removed default border */
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #777; /* Light grey text for inactive tabs */
+  transition: background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  margin-bottom: -1px; /* Pull tabs down slightly to overlap the border */
+}
+
+.rides-tabs div:hover {
+  background-color: #f0f0f0; /* Slightly darker hover */
+}
+
+/* Active tab styling */
+.rides-tabs .active-tab {
+  background-color: #f8f8f8; /* Light grey background */
+  color: #333; /* Darker text */
+  font-weight: bold; /* Bold text for active tab */
+  border-bottom: 3px solid #007bff; /* Blue bottom border indicator */
+   border: 1px solid #ddd; /* Add border back for active tab */
+   border-bottom-color: #f8f8f8; /* Hide bottom border of the tab itself */
+}
+
+/* Adjust spacing between tabs more precisely if needed */
+.rides-tabs div + div {
+    margin-left: 15px;
+} 

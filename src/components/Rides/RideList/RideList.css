@@ -1,0 +1,139 @@
+/* Styles for RideList component */
+.ride-list-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.ride-list-container .list-header {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 1.5fr 2fr 1.2fr 0.8fr 1fr 1fr 0.5fr; /* Adjusted columns */
+    padding: 12px 20px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9em;
+    align-items: center; /* Vertically align header text */
+}
+
+.ride-list-container .header-item {
+    padding: 0 5px;
+}
+
+.ride-list-container .ride-list-item {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 1.5fr 2fr 1.2fr 0.8fr 1fr 1fr 0.5fr; /* Match header columns */
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.ride-list-container .ride-list-item:last-child {
+    border-bottom: none;
+}
+
+.ride-list-container .ride-list-item:hover {
+    background-color: #f9f9f9;
+}
+
+.ride-list-container .ride-id {
+    padding: 0 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.ride-list-container .rider-info,
+.ride-list-container .driver-info {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.ride-list-container .rider-info .avatar,
+.ride-list-container .driver-info .avatar {
+    width: 30px; /* Smaller avatar */
+    height: 30px; /* Smaller avatar */
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.ride-list-container .rider-info .details,
+.ride-list-container .driver-info .details {
+    flex-grow: 1;
+}
+
+.ride-list-container .rider-info p,
+.ride-list-container .driver-info p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9em; /* Adjusted font size */
+}
+
+.ride-list-container .rider-info small,
+.ride-list-container .driver-info small {
+    display: block;
+    font-size: 0.75em; /* Adjusted font size */
+    color: #777;
+    margin-top: 2px;
+}
+
+.ride-list-container .ride-route,
+.ride-list-container .ride-time,
+.ride-list-container .ride-fare,
+.ride-list-container .ride-payment {
+    padding: 0 5px;
+    font-size: 0.9em; /* Adjusted font size */
+    color: #333;
+}
+
+.ride-list-container .ride-route p,
+.ride-list-container .ride-time p,
+.ride-list-container .ride-fare p,
+.ride-list-container .ride-payment p {
+    margin: 0;
+}
+
+.ride-list-container .ride-route small,
+.ride-list-container .ride-time small,
+.ride-list-container .ride-fare small {
+     display: block;
+    font-size: 0.8em; /* Adjusted font size */
+    color: #777;
+    margin-top: 2px;
+}
+
+.ride-list-container .ride-status {
+    padding: 0 5px;
+}
+
+.ride-list-container .status-tag {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.75em;
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.ride-list-container .status-tag.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.ride-list-container .ride-actions {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.ride-list-container .action-ellipsis {
+    font-size: 1.2em;
+    color: #555;
+    cursor: pointer;
+} 

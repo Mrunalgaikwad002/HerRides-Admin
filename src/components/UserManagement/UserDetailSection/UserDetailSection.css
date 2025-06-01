@@ -1,0 +1,158 @@
+/* Styles for UserDetailSection component */ 
+.user-detail-section {
+    flex-basis: 60%; /* Adjust width as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.user-detail-section .user-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-detail-section .user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-detail-section .user-title {
+    flex-grow: 1;
+}
+
+.user-detail-section .user-title h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.user-detail-section .user-title p {
+    margin: 2px 0 0 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.user-detail-section .deactivate-button {
+    padding: 8px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex; /* Align icon and text */
+    align-items: center;
+    gap: 5px; /* Added space between icon and text */
+}
+
+.user-detail-section .deactivate-button:hover {
+    background-color: #c82333;
+}
+
+/* User Info Grid */
+.user-detail-section .user-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.user-detail-section .info-item {
+    /* No specific styles for the item container needed based on image */
+}
+
+.user-detail-section .info-label {
+    display: block;
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.user-detail-section .info-item p {
+    margin: 0 0 3px 0;
+    color: #333;
+    font-size: 0.95em; /* Adjusted font size */
+}
+
+.user-detail-section .info-item p:last-child {
+    margin-bottom: 0;
+}
+
+.user-detail-section .info-item .complaints {
+    color: #dc3545; /* Red color for complaints */
+    font-weight: bold;
+}
+
+.user-detail-section .info-item .status-tag.verified {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+/* Ride History */
+.user-detail-section .ride-history-section h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.user-detail-section .history-timeline {
+    margin: 0 0 20px 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.user-detail-section .history-list {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden; /* Ensures rounded corners */
+}
+
+.user-detail-section .history-header {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr; /* Adjust column widths */
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em; /* Adjusted font size */
+}
+
+.user-detail-section .history-row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr; /* Match header columns */
+    align-items: center;
+    padding: 10px 15px; /* Consistent padding */
+    border-bottom: 1px solid #eee;
+}
+
+.user-detail-section .history-row:last-child {
+    border-bottom: none;
+}
+
+.user-detail-section .history-item-route p,
+.user-detail-section .history-item-rider p,
+.user-detail-section .history-item-datetime p {
+    margin: 0;
+    color: #333;
+    font-size: 0.95em; /* Adjusted font size */
+}
+
+.user-detail-section .history-item-route small,
+.user-detail-section .history-item-rider small,
+.user-detail-section .history-item-datetime small {
+    display: block;
+    font-size: 0.85em; /* Adjusted font size */
+    color: #777;
+    margin-top: 2px;
+} 

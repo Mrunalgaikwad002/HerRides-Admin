@@ -1,0 +1,45 @@
+/* Styles for FilterSection component */ 
+.filter-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 12px 20px; /* Adjusted padding to match visual */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-icon {
+    font-size: 1em; /* Adjusted size */
+    margin-right: 15px; /* Adjusted spacing */
+    color: #777; /* Sample color matching image */
+}
+
+.filter-search-bar {
+    flex-grow: 1;
+    padding: 8px 10px; /* Adjusted padding */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 15px; /* Adjusted spacing */
+    font-size: 0.95em; /* Adjusted font size */
+}
+
+.filter-dropdown {
+    padding: 8px 25px 8px 10px; /* Adjusted padding for arrow */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 15px; /* Adjusted spacing */
+    background-color: #fff;
+    cursor: pointer;
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M287%2C197.9L159.5%2C65.2c-5.4-5.4-14.2-5.4-19.6%2C0L5.4%2C197.9c-5.4%2C5.4-5.4%2C14.2%2C0%2C19.6l8.8%2C8.8c5.4%2C5.4%2C14.2%2C5.4%2C19.6%2C0l115.3-115.3L258.6%2C226.3c5.4%2C5.4%2C14.2%2C5.4%2C19.6%2C0l8.8-8.8C292.3%2C212.1%2C292.3%2C203.3%2C287%2C197.9z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow color */
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+    font-size: 0.95em; /* Adjusted font size */
+    color: #555; /* Adjusted text color */
+}
+
+.filter-dropdown:last-child {
+    margin-right: 0;
+} 

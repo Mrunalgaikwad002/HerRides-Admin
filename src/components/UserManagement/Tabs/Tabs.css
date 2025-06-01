@@ -1,0 +1,28 @@
+/* Styles for Tabs component */ 
+.user-management-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.user-management-tabs .tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px; /* Space between tabs */
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.user-management-tabs .tab.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+    font-weight: bold;
+}
+
+.user-management-tabs .tab:hover {
+    color: #007bff;
+} 
