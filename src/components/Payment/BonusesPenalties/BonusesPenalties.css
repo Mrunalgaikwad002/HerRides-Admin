@@ -1,0 +1,169 @@
+.bonuses-penalties-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bonuses-penalties-section h3 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.filter-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-section input,
+.filter-section select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filter-section input:focus,
+.filter-section select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.bonuses-penalties-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.bonuses-penalties-table th,
+.bonuses-penalties-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.bonuses-penalties-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+}
+
+.driver-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.driver-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.driver-id {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.type-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.type-badge.bonus {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.type-badge.penalty {
+  background-color: #fff1f0;
+  color: #f5222d;
+}
+
+.bonus-amount {
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.penalty-amount {
+  color: #f5222d;
+  font-weight: 500;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-badge.approved {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.status-badge.pending {
+  background-color: #fff7e6;
+  color: #fa8c16;
+}
+
+.status-badge.rejected {
+  background-color: #fff1f0;
+  color: #f5222d;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.approve-btn,
+.reject-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.approve-btn {
+  background-color: #52c41a;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #f5222d;
+  color: white;
+}
+
+.approve-btn:hover,
+.reject-btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .bonuses-penalties-table th,
+  .bonuses-penalties-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+} 

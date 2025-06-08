@@ -1,0 +1,61 @@
+.ride-report-section {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.ride-report-section h3 {
+  color: #222;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.report-placeholder {
+  color: #aaa;
+  font-size: 1.1rem;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.ride-report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.ride-report-table th, .ride-report-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 15px;
+}
+.ride-report-table th {
+  background: #f3f6fa;
+  color: #333;
+  font-weight: 600;
+}
+.ride-report-table tr:last-child td {
+  border-bottom: none;
+}
+.table-responsive {
+  overflow-x: auto;
+}
+.download-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.download-btn:hover {
+  background: #0056b3;
+} 

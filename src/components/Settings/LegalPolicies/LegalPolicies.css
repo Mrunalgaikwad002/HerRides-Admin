@@ -1,0 +1,19 @@
+.legal-policies-section {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.legal-policies-section h3 {
+  color: #222;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.settings-placeholder {
+  color: #aaa;
+  font-size: 1.1rem;
+  padding: 24px 0;
+  text-align: center;
+} 

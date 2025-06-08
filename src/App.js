@@ -5,6 +5,9 @@ import Register from './components/Register/Register';
 import Dashboard from './components/Dashboard/Dashboard';
 import UserManagement from './components/UserManagement/UserManagement';
 import Rides from './components/Rides/Rides';
+import Payment from './components/Payment/Payment';
+import Report from './components/Report/Report';
+import Settings from './components/Settings/Settings';
 import './App.css';
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/user-management" element={<UserManagement />} />
           <Route path="/rides" element={<Rides />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/report" element={<Report />} />
+          <Route path="/settings" element={<Settings />} />
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </div>
